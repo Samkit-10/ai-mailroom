@@ -7,7 +7,8 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
 # Initialize application configuration
-app = FastAPI()
+app = FastAPI(redirect_slashes=False)
+
 
 # -------------------------------------------------------------------------
 # In-Memory Volatile Stores (Upgrade to durable engine for distributed layers)
